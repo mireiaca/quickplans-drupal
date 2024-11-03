@@ -1,0 +1,19 @@
+uuid: 27554f57-c7c9-401a-b61e-bfa3e2741cc9
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_asociados
+    - node.type.quickplan
+id: node.quickplan.field_asociados
+field_name: field_asociados
+entity_type: node
+bundle: quickplan
+label: 'Asociados al plan'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

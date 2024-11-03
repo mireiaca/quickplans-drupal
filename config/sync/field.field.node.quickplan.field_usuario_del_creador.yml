@@ -1,0 +1,19 @@
+uuid: 1b570a2b-1335-43d2-bac1-2049d058e3f6
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_usuario_del_creador
+    - node.type.quickplan
+id: node.quickplan.field_usuario_del_creador
+field_name: field_usuario_del_creador
+entity_type: node
+bundle: quickplan
+label: 'Usuario del creador'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

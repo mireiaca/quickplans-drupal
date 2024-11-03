@@ -1,0 +1,9 @@
+uuid: cf228b3e-9898-428c-97ea-79f56d0745d5
+langcode: es
+status: true
+dependencies: {  }
+name: 'Tipo de plan'
+vid: tipo_de_plan
+description: 'Tipos de planes que se pueden realizar'
+weight: 0
+new_revision: false

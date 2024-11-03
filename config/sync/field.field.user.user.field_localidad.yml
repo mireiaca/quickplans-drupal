@@ -1,0 +1,20 @@
+uuid: e509121a-e3fc-4556-b474-a3e5245b3666
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_localidad
+  module:
+    - user
+id: user.user.field_localidad
+field_name: field_localidad
+entity_type: user
+bundle: user
+label: Localidad
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

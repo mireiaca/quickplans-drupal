@@ -1,0 +1,19 @@
+uuid: 7e512177-0e60-49fe-8da6-c3e19c6a064e
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_grupo_asociado
+field_name: field_grupo_asociado
+entity_type: node
+type: entity_reference
+settings:
+  target_type: node
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

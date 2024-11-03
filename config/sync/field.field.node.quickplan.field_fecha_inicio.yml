@@ -1,0 +1,21 @@
+uuid: b2fdeb8a-134f-4715-8738-c0a7b3e6a308
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_fecha_inicio
+    - node.type.quickplan
+  module:
+    - datetime
+id: node.quickplan.field_fecha_inicio
+field_name: field_fecha_inicio
+entity_type: node
+bundle: quickplan
+label: 'Fecha de inicio'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

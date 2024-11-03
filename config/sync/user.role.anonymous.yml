@@ -1,0 +1,27 @@
+uuid: e5365029-ce6b-4e59-b9ea-35587bcdd04c
+langcode: es
+status: true
+dependencies:
+  config:
+    - filter.format.restricted_html
+    - rest.resource.user_registration
+  module:
+    - comment
+    - contact
+    - filter
+    - rest
+    - search
+    - system
+_core:
+  default_config_hash: 6WavjUYXIegP9AAg2zXGx54MWIVoomC3SZhNiqe-Dyk
+id: anonymous
+label: 'Usuario anónimo'
+weight: 0
+is_admin: false
+permissions:
+  - 'access comments'
+  - 'access content'
+  - 'access site-wide contact form'
+  - 'restful post user_registration'
+  - 'search content'
+  - 'use text format restricted_html'

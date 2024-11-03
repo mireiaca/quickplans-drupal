@@ -1,0 +1,20 @@
+uuid: cd63472e-e8c5-431f-bf74-f28a16962c89
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_amigos
+  module:
+    - user
+id: user.user.field_amigos
+field_name: field_amigos
+entity_type: user
+bundle: user
+label: Amigos
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

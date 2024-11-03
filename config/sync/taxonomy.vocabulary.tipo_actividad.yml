@@ -1,0 +1,9 @@
+uuid: 6357beab-294c-437b-99ec-bb71695072ca
+langcode: es
+status: true
+dependencies: {  }
+name: 'Tipo de actividad'
+vid: tipo_actividad
+description: 'Tipos de actividad que puede ser un plan o interesar a un usuario'
+weight: 0
+new_revision: false

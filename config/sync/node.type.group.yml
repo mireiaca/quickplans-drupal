@@ -1,0 +1,18 @@
+uuid: f59b5719-a8cd-49fb-ae8c-161ef10c1faa
+langcode: es
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: Grupo
+type: group
+description: null
+help: null
+new_revision: true
+preview_mode: 1
+display_submitted: true

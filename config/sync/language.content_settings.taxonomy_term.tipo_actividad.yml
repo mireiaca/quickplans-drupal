@@ -1,0 +1,11 @@
+uuid: c6004a5d-d27d-4cf7-b54a-031e64560c3a
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.tipo_actividad
+id: taxonomy_term.tipo_actividad
+target_entity_type_id: taxonomy_term
+target_bundle: tipo_actividad
+default_langcode: site_default
+language_alterable: false

@@ -1,0 +1,43 @@
+uuid: 63bda6de-9cc6-4e1d-a419-1a741dd0c11c
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.quickplan.field_asociados
+    - field.field.node.quickplan.field_descripcion
+    - field.field.node.quickplan.field_fecha_fin
+    - field.field.node.quickplan.field_fecha_inicio
+    - field.field.node.quickplan.field_grupo_asociado
+    - field.field.node.quickplan.field_imagen
+    - field.field.node.quickplan.field_latitud
+    - field.field.node.quickplan.field_longitud
+    - field.field.node.quickplan.field_tipo_de_actividad
+    - field.field.node.quickplan.field_tipo_de_plan
+    - field.field.node.quickplan.field_usuario_del_creador
+    - node.type.quickplan
+  module:
+    - user
+id: node.quickplan.teaser
+targetEntityType: node
+bundle: quickplan
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_asociados: true
+  field_descripcion: true
+  field_fecha_fin: true
+  field_fecha_inicio: true
+  field_grupo_asociado: true
+  field_imagen: true
+  field_latitud: true
+  field_longitud: true
+  field_tipo_de_actividad: true
+  field_tipo_de_plan: true
+  field_usuario_del_creador: true
+  langcode: true

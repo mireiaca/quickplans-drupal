@@ -1,0 +1,125 @@
+uuid: 5cee2db0-e972-4da8-b070-c1322268cdf3
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.node.quickplan.field_asociados
+    - field.field.node.quickplan.field_descripcion
+    - field.field.node.quickplan.field_fecha_fin
+    - field.field.node.quickplan.field_fecha_inicio
+    - field.field.node.quickplan.field_grupo_asociado
+    - field.field.node.quickplan.field_imagen
+    - field.field.node.quickplan.field_latitud
+    - field.field.node.quickplan.field_longitud
+    - field.field.node.quickplan.field_tipo_de_actividad
+    - field.field.node.quickplan.field_tipo_de_plan
+    - field.field.node.quickplan.field_usuario_del_creador
+    - node.type.quickplan
+  module:
+    - datetime
+    - image
+    - user
+id: node.quickplan.default
+targetEntityType: node
+bundle: quickplan
+mode: default
+content:
+  field_asociados:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  field_descripcion:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  field_fecha_fin:
+    type: datetime_default
+    label: above
+    settings:
+      timezone_override: ''
+      format_type: medium
+    third_party_settings: {  }
+    weight: 105
+    region: content
+  field_fecha_inicio:
+    type: datetime_default
+    label: above
+    settings:
+      timezone_override: ''
+      format_type: medium
+    third_party_settings: {  }
+    weight: 104
+    region: content
+  field_grupo_asociado:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 112
+    region: content
+  field_imagen:
+    type: image
+    label: above
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 106
+    region: content
+  field_latitud:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 107
+    region: content
+  field_longitud:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 108
+    region: content
+  field_tipo_de_actividad:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 109
+    region: content
+  field_tipo_de_plan:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 110
+    region: content
+  field_usuario_del_creador:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 111
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  langcode: true

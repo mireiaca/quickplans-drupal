@@ -1,0 +1,45 @@
+uuid: a5abb861-868d-4177-8648-6c39cabd3dc6
+langcode: es
+status: true
+dependencies:
+  config:
+    - filter.format.basic_html
+    - node.type.group
+    - node.type.quickplan
+    - rest.resource.user_registration
+  module:
+    - comment
+    - contact
+    - file
+    - filter
+    - node
+    - rest
+    - search
+    - shortcut
+    - system
+_core:
+  default_config_hash: cFrlqjtkTfvY3RGccjJkPf1SGIfJ942IrxTLWAO4mgA
+id: authenticated
+label: 'Usuario autenticado'
+weight: 1
+is_admin: false
+permissions:
+  - 'access comments'
+  - 'access content'
+  - 'access shortcuts'
+  - 'access site-wide contact form'
+  - 'access user profiles'
+  - 'administer users'
+  - 'change own username'
+  - 'create group content'
+  - 'create quickplan content'
+  - 'delete own files'
+  - 'edit any group content'
+  - 'edit any quickplan content'
+  - 'edit own group content'
+  - 'edit own quickplan content'
+  - 'post comments'
+  - 'restful post user_registration'
+  - 'search content'
+  - 'skip comment approval'
+  - 'use text format basic_html'

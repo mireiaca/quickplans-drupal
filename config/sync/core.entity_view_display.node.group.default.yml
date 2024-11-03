@@ -1,0 +1,42 @@
+uuid: 14fbe026-b4d1-48e4-a487-4359846dc909
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.node.group.field_imagen
+    - field.field.node.group.field_miembros
+    - node.type.group
+  module:
+    - image
+    - user
+id: node.group.default
+targetEntityType: node
+bundle: group
+mode: default
+content:
+  field_imagen:
+    type: image
+    label: above
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 106
+    region: content
+  field_miembros:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 107
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  langcode: true

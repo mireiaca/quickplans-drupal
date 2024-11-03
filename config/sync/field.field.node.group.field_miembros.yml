@@ -1,0 +1,19 @@
+uuid: 84cd6697-60a9-473b-a4ad-92f9b3bbffd7
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_miembros
+    - node.type.group
+id: node.group.field_miembros
+field_name: field_miembros
+entity_type: node
+bundle: group
+label: Miembros
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

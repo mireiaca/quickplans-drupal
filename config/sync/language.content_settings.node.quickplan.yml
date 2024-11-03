@@ -1,0 +1,11 @@
+uuid: af09fdcd-8a2f-49a6-aed9-ec4551d562bb
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.quickplan
+id: node.quickplan
+target_entity_type_id: node
+target_bundle: quickplan
+default_langcode: site_default
+language_alterable: false

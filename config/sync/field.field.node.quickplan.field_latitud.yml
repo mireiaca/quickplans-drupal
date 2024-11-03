@@ -1,0 +1,19 @@
+uuid: 641e3351-3bcb-4683-a84e-b18419312a08
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_latitud
+    - node.type.quickplan
+id: node.quickplan.field_latitud
+field_name: field_latitud
+entity_type: node
+bundle: quickplan
+label: Latitud
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

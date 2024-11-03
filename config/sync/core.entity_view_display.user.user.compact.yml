@@ -1,0 +1,42 @@
+uuid: 95381683-bb64-491d-8b55-2a3338931cfc
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.user.compact
+    - field.field.user.user.field_amigos
+    - field.field.user.user.field_biografia
+    - field.field.user.user.field_intereses
+    - field.field.user.user.field_localidad
+    - field.field.user.user.field_nombre
+    - field.field.user.user.user_picture
+    - image.style.thumbnail
+  module:
+    - image
+    - user
+_core:
+  default_config_hash: 00zr_RBdTjPjBGITD3h4c1ESQZimjdVCcHGt1trLqIY
+id: user.user.compact
+targetEntityType: user
+bundle: user
+mode: compact
+content:
+  user_picture:
+    type: image
+    label: hidden
+    settings:
+      image_link: content
+      image_style: thumbnail
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  field_amigos: true
+  field_biografia: true
+  field_intereses: true
+  field_localidad: true
+  field_nombre: true
+  langcode: true
+  member_for: true

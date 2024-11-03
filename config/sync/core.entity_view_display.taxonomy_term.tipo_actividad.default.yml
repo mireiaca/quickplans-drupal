@@ -1,0 +1,30 @@
+uuid: 42817fba-f9f2-49f9-b053-a5daf395658b
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.tipo_actividad.field_descripcion
+    - taxonomy.vocabulary.tipo_actividad
+  module:
+    - text
+id: taxonomy_term.tipo_actividad.default
+targetEntityType: taxonomy_term
+bundle: tipo_actividad
+mode: default
+content:
+  description:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_descripcion:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden:
+  langcode: true

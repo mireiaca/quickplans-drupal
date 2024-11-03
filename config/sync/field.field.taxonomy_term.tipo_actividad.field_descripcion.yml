@@ -1,0 +1,19 @@
+uuid: 6c08e45c-1170-408a-9f9a-a7beb4a9f721
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_descripcion
+    - taxonomy.vocabulary.tipo_actividad
+id: taxonomy_term.tipo_actividad.field_descripcion
+field_name: field_descripcion
+entity_type: taxonomy_term
+bundle: tipo_actividad
+label: Descripción
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

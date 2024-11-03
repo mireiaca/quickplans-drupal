@@ -1,0 +1,25 @@
+uuid: e3416587-6cda-451e-8786-5f4d9edb0a56
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.group.field_imagen
+    - field.field.node.group.field_miembros
+    - node.type.group
+  module:
+    - user
+id: node.group.teaser
+targetEntityType: node
+bundle: group
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_imagen: true
+  field_miembros: true
+  langcode: true
