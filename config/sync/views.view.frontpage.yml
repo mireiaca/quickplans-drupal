@@ -311,3 +311,22 @@ display:
         - 'user.node_grants:view'
         - user.permissions
       tags: {  }
+  page_2:
+    id: page_2
+    display_title: 'Página 2'
+    display_plugin: page
+    position: 3
+    display_options:
+      empty: {  }
+      defaults:
+        empty: false
+      display_extenders: {  }
+      path: indice
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_interface'
+        - url.query_args
+        - 'user.node_grants:view'
+        - user.permissions
+      tags: {  }

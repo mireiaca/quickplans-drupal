@@ -17,27 +17,57 @@ dependencies:
     - field.field.node.quickplan.field_usuario_del_creador
     - node.type.quickplan
   module:
+    - datetime
+    - image
     - user
 id: node.quickplan.teaser
 targetEntityType: node
 bundle: quickplan
 mode: teaser
 content:
-  links:
+  field_descripcion:
+    type: basic_string
+    label: above
     settings: {  }
     third_party_settings: {  }
-    weight: 100
+    weight: 0
+    region: content
+  field_fecha_fin:
+    type: datetime_default
+    label: above
+    settings:
+      timezone_override: ''
+      format_type: medium
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_fecha_inicio:
+    type: datetime_default
+    label: above
+    settings:
+      timezone_override: ''
+      format_type: medium
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_imagen:
+    type: image
+    label: above
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 3
     region: content
 hidden:
   field_asociados: true
-  field_descripcion: true
-  field_fecha_fin: true
-  field_fecha_inicio: true
   field_grupo_asociado: true
-  field_imagen: true
   field_latitud: true
   field_longitud: true
   field_tipo_de_actividad: true
   field_tipo_de_plan: true
   field_usuario_del_creador: true
   langcode: true
+  links: true

@@ -1,0 +1,7 @@
+name: 'Custom Image Upload'
+type: module
+description: 'Endpoint for uploading images via Postman.'
+core_version_requirement: ^8 || ^9 || ^10
+package: Custom
+dependencies:
+  - drupal:file

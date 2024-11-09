@@ -1,0 +1,29 @@
+uuid: 0a3ef6f8-d0b1-4fc0-9a67-45cc538f5e97
+langcode: es
+status: true
+dependencies:
+  config:
+    - views.view.quickplans
+  module:
+    - system
+    - views
+  theme:
+    - olivero
+id: olivero_views_block__quickplans_block_1
+theme: olivero
+region: content
+weight: -6
+provider: null
+plugin: 'views_block:quickplans-block_1'
+settings:
+  id: 'views_block:quickplans-block_1'
+  label: QuickPlans
+  label_display: visible
+  provider: views
+  views_label: QuickPlans
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /indice

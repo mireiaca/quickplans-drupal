@@ -9,6 +9,7 @@ dependencies:
     - comment
     - contact
     - filter
+    - media
     - rest
     - search
     - system
@@ -25,3 +26,5 @@ permissions:
   - 'restful post user_registration'
   - 'search content'
   - 'use text format restricted_html'
+  - 'view media'
+  - 'view user email addresses'

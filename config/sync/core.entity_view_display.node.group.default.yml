@@ -23,7 +23,7 @@ content:
       image_loading:
         attribute: lazy
     third_party_settings: {  }
-    weight: 106
+    weight: 1
     region: content
   field_miembros:
     type: string
@@ -31,12 +31,8 @@ content:
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    weight: 107
-    region: content
-  links:
-    settings: {  }
-    third_party_settings: {  }
-    weight: 100
+    weight: 0
     region: content
 hidden:
   langcode: true
+  links: true

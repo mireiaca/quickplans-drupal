@@ -2,6 +2,8 @@ uuid: b9afc4bd-7f0a-4401-8eec-3c1f29af716b
 langcode: es
 status: true
 dependencies:
+  module:
+    - system
   theme:
     - olivero
 _core:
@@ -17,4 +19,8 @@ settings:
   label: 'Título de la página'
   label_display: '0'
   provider: core
-visibility: {  }
+visibility:
+  request_path:
+    id: request_path
+    negate: true
+    pages: "/node\r\n/indice"

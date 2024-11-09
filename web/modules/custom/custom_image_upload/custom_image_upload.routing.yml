@@ -1,0 +1,8 @@
+custom_image_upload.upload:
+  path: '/api/upload-image'
+  defaults:
+    _controller: '\Drupal\custom_image_upload\Controller\ImageUploadController::uploadImage'
+    _title: 'Upload Image'
+  methods: ['POST']
+  requirements:
+    _permission: 'access content'

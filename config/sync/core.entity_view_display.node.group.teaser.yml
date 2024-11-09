@@ -8,18 +8,32 @@ dependencies:
     - field.field.node.group.field_miembros
     - node.type.group
   module:
+    - image
     - user
 id: node.group.teaser
 targetEntityType: node
 bundle: group
 mode: teaser
 content:
-  links:
-    settings: {  }
+  field_imagen:
+    type: image
+    label: above
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
     third_party_settings: {  }
-    weight: 100
+    weight: 1
+    region: content
+  field_miembros:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
     region: content
 hidden:
-  field_imagen: true
-  field_miembros: true
   langcode: true
+  links: true

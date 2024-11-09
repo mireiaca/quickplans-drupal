@@ -14,6 +14,7 @@ dependencies:
     - field.field.node.quickplan.field_tipo_de_actividad
     - field.field.node.quickplan.field_tipo_de_plan
     - field.field.node.quickplan.field_usuario_del_creador
+    - image.style.medium
     - node.type.quickplan
   module:
     - datetime
@@ -30,14 +31,14 @@ content:
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    weight: 101
+    weight: 1
     region: content
   field_descripcion:
     type: basic_string
     label: above
     settings: {  }
     third_party_settings: {  }
-    weight: 102
+    weight: 0
     region: content
   field_fecha_fin:
     type: datetime_default
@@ -46,7 +47,7 @@ content:
       timezone_override: ''
       format_type: medium
     third_party_settings: {  }
-    weight: 105
+    weight: 3
     region: content
   field_fecha_inicio:
     type: datetime_default
@@ -55,7 +56,7 @@ content:
       timezone_override: ''
       format_type: medium
     third_party_settings: {  }
-    weight: 104
+    weight: 2
     region: content
   field_grupo_asociado:
     type: entity_reference_label
@@ -63,18 +64,18 @@ content:
     settings:
       link: true
     third_party_settings: {  }
-    weight: 112
+    weight: 9
     region: content
   field_imagen:
     type: image
     label: above
     settings:
       image_link: ''
-      image_style: ''
+      image_style: medium
       image_loading:
         attribute: lazy
     third_party_settings: {  }
-    weight: 106
+    weight: 10
     region: content
   field_latitud:
     type: string
@@ -82,7 +83,7 @@ content:
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    weight: 107
+    weight: 4
     region: content
   field_longitud:
     type: string
@@ -90,7 +91,7 @@ content:
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    weight: 108
+    weight: 5
     region: content
   field_tipo_de_actividad:
     type: entity_reference_label
@@ -98,7 +99,7 @@ content:
     settings:
       link: true
     third_party_settings: {  }
-    weight: 109
+    weight: 6
     region: content
   field_tipo_de_plan:
     type: entity_reference_label
@@ -106,7 +107,7 @@ content:
     settings:
       link: true
     third_party_settings: {  }
-    weight: 110
+    weight: 7
     region: content
   field_usuario_del_creador:
     type: string
@@ -114,12 +115,8 @@ content:
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    weight: 111
-    region: content
-  links:
-    settings: {  }
-    third_party_settings: {  }
-    weight: 100
+    weight: 8
     region: content
 hidden:
   langcode: true
+  links: true

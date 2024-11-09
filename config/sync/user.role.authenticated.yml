@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - filter.format.basic_html
+    - media.type.image
     - node.type.group
     - node.type.quickplan
     - rest.resource.user_registration
@@ -12,6 +13,7 @@ dependencies:
     - contact
     - file
     - filter
+    - media
     - node
     - rest
     - search
@@ -32,6 +34,7 @@ permissions:
   - 'administer users'
   - 'change own username'
   - 'create group content'
+  - 'create image media'
   - 'create quickplan content'
   - 'delete own files'
   - 'edit any group content'
@@ -43,3 +46,5 @@ permissions:
   - 'search content'
   - 'skip comment approval'
   - 'use text format basic_html'
+  - 'view media'
+  - 'view user email addresses'
